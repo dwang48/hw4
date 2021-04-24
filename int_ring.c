@@ -1,8 +1,8 @@
 //use mpirun -np p ./int_ring N to run
 
-#include <cstdlib>
+#include <stdlib.h>
 #include <mpi.h>
-#include <iostream>
+#include <stdio.h>
 
 #include <unistd.h>
 #include "util.h"

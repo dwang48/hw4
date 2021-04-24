@@ -1,24 +1,25 @@
+Forgot to upload the makefile last time. I only put the compile command in the makefile and the run command are as follows. Also forgot to upload util.h file last time.
 ---pingpong.cpp---
-command: mpiexec ./a.out 0 3
+command: mpiexec ./pingpong 0 3
 pingpong latency: 1.812190e-04 ms
 pingpong bandwidth: 1.362704e+01 GB/s
 
 
 ---int_ring.c---
-command: mpiexec ./a.out 48000 8
+command: mpiexec ./int_ring 48000 8
 Message size: 0.000031 MB
 Loops: 48000
 Time  0.190488 seconds
 Latency 0.000001 seconds
 ----------------
-command: mpiexec ./a.out 96 524288
+command: mpiexec ./int_ring 96 524288
 Message size: 2MB
 Loops:96
 Time  2.872636 seconds
 Latency 0.000623 seconds
 Estimated Bandwidth: 3.13301 GB/s
 ---jacobi-mpi.cpp---
-command: mpiexec ./a.out 48 100
+command: mpiexec ./jacobi-mpi 48 100
 Number of Iterations:0
 Residual:6.0208
 Number of Iterations:10
@@ -42,5 +43,5 @@ Residual:0.00327748
 Time elapsed is 0.001464 seconds.
 
 ---Plan---
-Final Project Plan: I plan to work on the k-means clustering for the final project. I would like to find some commercial data or financial data and applies k-means clustering with CUDA to the datal. I am currently planning to work on the project on my own. 
+Final Project Plan: I plan to work on the k-means clustering for the final project. I would like to find some commercial data or financial data and applies k-means clustering with CUDA to the data. I am currently planning to work on the project on my own. 
 
